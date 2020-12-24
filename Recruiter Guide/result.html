@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>
+            Result
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+       
+    </head>
+    <body>
+        <div class="header">
+            <p>apli.ai</p>
+            <img src="img/pic.jpg" id="photo0"/>
+        </div>
+        <div class='mytab'>
+            <label id='result'>Result</label>
+            <table border='1' id='finalTable'>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Grade</th>
+                        <th>Comments</th>       
+                    </tr>
+                </thead>
+               
+            </table>
+   
+        </div>
+    </body>
+    <script src="js/script.js"></script>
+    <script>
+        grades = JSON.parse(sessionStorage.getItem("grades"));
+        comments = JSON.parse(sessionStorage.getItem("comments"));
+        window.onload = function resultable(){
+        let table = document.getElementById('finalTable')
+        f=0;
+        for (f=questions.length-1;f>=0;f--){
+            let row = table.insertRow(1);
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+
+            cell1.innerHTML = ''+questions[f].question;
+            cell2.innerHTML = ''+grades[f];
+            cell3.innerHTML = ''+comments[f];
+            console.log(questions);
+        }
+    }
+     </script>
+</html>       

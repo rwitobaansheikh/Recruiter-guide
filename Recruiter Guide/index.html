@@ -1,0 +1,84 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>
+            interview_review
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div class="header">
+            <p>apli.ai</p>
+            <img src="img/pic.jpg" id="photo0"/>
+        </div>
+        <main>
+            <div class="row">
+                <div class="left">
+                    <div>
+                        <label id='candidate'>Candidate Name</label>
+                        <img src="img/pic.jpg" id="photo1"/>
+                    </div>
+                    <canvas id="myChart" width="400" height="400" ></canvas>
+                </div>
+                <div class="center">
+                    <div class="content">
+                        <input type='button' class='button' value='&larr;' name='prev' onclick="Prevques()" />
+                        <div id='qs'></div>
+                        <input type='button' class='button' value='&rarr;' name='next' onclick="Nextques()" />
+                    </div>
+                    <div class="content">
+                        <label id="question">Q1. Tell us something about yourself.</label>
+                    </div>
+                    <div class="content">
+                        <iframe id='mainImg' src="https://www.youtube.com/embed/m5kR7TPAkSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="content">
+                        <label id="comm">Comments</label>
+                        <textarea name="comments" id="comment"></textarea>
+                        <input type='button' class='button' value='Save' name='next' onclick="save()" />
+                    </div>
+                </div>
+                <div class="right">
+                    <label class="grade">Grade</label>
+                    <div>
+                        <!--<input type='radio' class='mark' id="1" value='1' name='mark'  />
+                        <label for="1">1</label>
+                        <input type='radio' class='mark' id="2" value='2' name='mark'  />
+                        <label for="1">2</label>
+                        <input type='radio' class='mark' id="3" value='3' name='mark'  />
+                        <label for="1">3</label>
+                        <input type='radio' class='mark' id="4" value='4' name='mark'  />
+                        <label for="1">4</label>
+                        <input type='radio' class='mark' id="5" value='5' name='mark'  />
+                        <label for="1">5</label>-->
+
+                        <label class="container">1
+                            <input type="radio" value='1' name='mark'>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">2
+                            <input type="radio" value='2' name='mark'>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">3
+                            <input type="radio" value='3' name='mark'>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">4
+                            <input type="radio" value='4' name='mark'>
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container">5
+                            <input type="radio" value='5' name='mark'>
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+    </body> 
+</html>
